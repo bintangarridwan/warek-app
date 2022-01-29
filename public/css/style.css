@@ -1,0 +1,31 @@
+.bg-steel-blue{
+    background-color: #e3f2fd;
+}
+.text-white{
+    color: white;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.right-sides{
+    float: right;
+}
+.container-width{
+    width: 60%;
+    height: 380px;
+    border-radius: 4%;
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+.img-thumbnail{
+    height: 180px;
+    width: 260px;
+}
+.text-center{
+    text-align: center;
+}
