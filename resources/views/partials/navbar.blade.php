@@ -12,7 +12,7 @@
                 <a href="/" class="nav-link text-primary">| WAREK |</a>
             </li>
             <li class="nav-item">
-                <a href="menu" class="nav-link text-primary">Menu</a>
+                <a href="category" class="nav-link text-primary">Category</a>
             </li>
             <li class="nav-item">
                 <a href="cart" class="nav-link text-primary">Cart</a>
