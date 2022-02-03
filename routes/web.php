@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProductController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -25,13 +26,9 @@ Route::get('/', function () {
 });
 
 Route::get("/about", [AboutController::class, 'index']);
+Route::get("/about", [AboutController::class, 'index']);
 Route::get("/contact", [ContactController::class, 'index']);
 Route::get("/category", [CategoryController::class, 'index']);
 Route::get("/cart", [CartController::class, 'index']);
-
-Route::get('/products', function(){
-    return view('products', [
-        'title' => 'products',
-        'products' => Product::all()
-    ]);
-});
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{products:slug}', [ProductController::class, 'show']);

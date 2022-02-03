@@ -10,9 +10,10 @@
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">{{ $product->p_name }}</h5>
-                    <p class="card-text"><a href="#">{{ $product->p_category }}</a></p>
+                    <hr>
+                    <p class="card-text">Category: <a href="/category/{{ $product->category->slug }}">{{ $product->category->names}}</a></p>
                     <p class="card-text">{{ $product->p_details }}</p>
-                    <p class="card-text">{{ $product->p_price }}</p>
+                    <p class="card-text">Rp. {{ $product->p_price }}</p>
                 </div>
             </div>    
             @endforeach
